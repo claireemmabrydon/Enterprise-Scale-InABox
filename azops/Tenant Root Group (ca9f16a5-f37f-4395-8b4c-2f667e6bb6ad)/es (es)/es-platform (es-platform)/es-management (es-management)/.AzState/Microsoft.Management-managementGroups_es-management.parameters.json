@@ -1,0 +1,80 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/es-management",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "es-management",
+        "TenantId": "ca9f16a5-f37f-4395-8b4c-2f667e6bb6ad",
+        "DisplayName": "es-management",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/es-platform",
+        "ParentName": "es-platform",
+        "ParentDisplayName": "es-platform",
+        "Children": [
+          {
+            "Type": "/subscriptions",
+            "Id": "/subscriptions/b31d747f-b000-4de5-a9c8-2ca2f5d2e8bc",
+            "Name": "b31d747f-b000-4de5-a9c8-2ca2f5d2e8bc",
+            "DisplayName": "Visual Studio Enterprise",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": {
+                "principalId": "1dd6a5b2-dd9c-417f-b6d5-262ca200cf41",
+                "tenantId": "ca9f16a5-f37f-4395-8b4c-2f667e6bb6ad",
+                "type": "SystemAssigned"
+              },
+              "Location": "northeurope",
+              "Name": "Deploy-Log-Analytics",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/es-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+              "Properties": {
+                "Description": "Deploy-Log-Analytics",
+                "DisplayName": "Deploy-Log-Analytics",
+                "NotScopes": null,
+                "Parameters": {
+                  "automationAccountName": {
+                    "value": "es-a-b31d747f-b000-4de5-a9c8-2ca2f5d2e8bc"
+                  },
+                  "automationRegion": {
+                    "value": "northeurope"
+                  },
+                  "rgName": {
+                    "value": "es-mgmt"
+                  },
+                  "workspaceName": {
+                    "value": "es-la-b31d747f-b000-4de5-a9c8-2ca2f5d2e8bc"
+                  },
+                  "workspaceRegion": {
+                    "value": "northeurope"
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/es/providers/Microsoft.Authorization/policyDefinitions/Deploy-Log-Analytics",
+                "Scope": "/providers/Microsoft.Management/managementGroups/es-management"
+              },
+              "ResourceGroupName": null,
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/es-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+              "ResourceName": "Deploy-Log-Analytics",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              },
+              "SubscriptionId": null
+            }
+          ],
+          "roleDefinitions": null,
+          "roleAssignments": null
+        }
+      }
+    }
+  }
+}
