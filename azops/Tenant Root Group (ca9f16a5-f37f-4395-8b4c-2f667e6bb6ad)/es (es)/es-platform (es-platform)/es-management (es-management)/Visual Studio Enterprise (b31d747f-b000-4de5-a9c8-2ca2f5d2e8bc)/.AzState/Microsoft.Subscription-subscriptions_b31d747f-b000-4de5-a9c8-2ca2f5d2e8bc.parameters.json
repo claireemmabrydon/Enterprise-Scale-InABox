@@ -26,15 +26,13 @@
                 "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/9cb3cc7a-b39b-4b82-bc89-e5a5d9ff7b97",
                 "Scope": "/subscriptions/b31d747f-b000-4de5-a9c8-2ca2f5d2e8bc"
               },
-              "ResourceGroupName": null,
               "ResourceId": "/subscriptions/b31d747f-b000-4de5-a9c8-2ca2f5d2e8bc/providers/Microsoft.Authorization/policyAssignments/DataProtectionSecurityCenter",
               "ResourceName": "DataProtectionSecurityCenter",
               "ResourceType": "Microsoft.Authorization/policyAssignments",
               "Sku": {
                 "name": "A1",
                 "tier": "Standard"
-              },
-              "SubscriptionId": "b31d747f-b000-4de5-a9c8-2ca2f5d2e8bc"
+              }
             },
             {
               "Identity": null,
@@ -49,19 +47,17 @@
                 "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
                 "Scope": "/subscriptions/b31d747f-b000-4de5-a9c8-2ca2f5d2e8bc"
               },
-              "ResourceGroupName": null,
               "ResourceId": "/subscriptions/b31d747f-b000-4de5-a9c8-2ca2f5d2e8bc/providers/Microsoft.Authorization/policyAssignments/SecurityCenterBuiltIn",
               "ResourceName": "SecurityCenterBuiltIn",
               "ResourceType": "Microsoft.Authorization/policyAssignments",
               "Sku": {
                 "name": "A1",
                 "tier": "Standard"
-              },
-              "SubscriptionId": "b31d747f-b000-4de5-a9c8-2ca2f5d2e8bc"
+              }
             }
           ],
-          "roleDefinitions": null,
-          "roleAssignments": null
+          "roleDefinitions": [],
+          "roleAssignments": []
         }
       }
     }
