@@ -10474,7 +10474,7 @@
             }
           ],
           "roleDefinitions": [],
-          "roleAssignments": null
+          "roleAssignments": []
         }
       }
     }
